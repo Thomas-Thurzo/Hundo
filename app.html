@@ -3,7 +3,7 @@
 <html lang="de" class="h-100">
 
 <head>
-    <title>App Name</title>
+    <title>HUNDO</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,6 +18,11 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="css/site.css">
 
+    <!-- Google Fonts für Racing Sans One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
     <!-- Favicon Link -->
     <link rel="icon" type="image/png" href="img/faviconTT.png">
 </head>
@@ -27,7 +32,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">APP NAME</a>
+        <a class="navbar-brand logoFont" href="#">HUNDO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,8 +61,53 @@
 
     <!-- Main Sektion -->
     <main class="flex-shrink-0">
-        <div class="container">
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-lg-2">
 
+                <!-- Col Eins -->
+                <div class="col-lg-4">
+                    <h1><span class="logoFont">HUNDO</span> - Ein Coding Projekt</h1>
+                    <h4 class="lead">
+                        Eine JavaScript Coding Übung für Loops. Schreibe ein Programm das Nummern
+                        von 0 bis 100 anzeigt. Gerade Zahlen sollen dick angezeigt werden.
+                    </h4>
+                    <h2 class="mt-5 border-bottom border-2">Anleitung</h2>
+                    <p>Bitte einen Startwert und einen Endwert eingeben. 
+                        Danach bitte den Start Button drücken und die Zahlen werden angezeigt.
+                    </p>
+                </div>
+
+                <!-- Col Zwei -->
+                <div class="col-lg-8">                  
+                    <div>
+                         <!-- Zahlen Eingabe Feld -->
+                        <h5>Zahlen eingeben</h5>
+                        <form class="row gy-2 gx-3">
+                            <div class="col">
+                                <input id="startWert" type="number" class="form-control" min="0" max="100" value=0 aria-label="Startwert">
+                            </div>
+                            <div class="col">
+                                <input id="endWert" type="number" class="form-control" min="0" max="100" value=100 aria-label="Endwert">
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Start</button>
+                            </div>
+                        </form>
+
+                        <!-- Zahlen Ausgabe Feld -->
+                        <h2 class="mt-5 border-bottom border-2">Ergebnis</h2>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-sm">
+                                <tbody id="ergebnis">                               
+
+                                    <!-- Ergebnis kommt hierher -->
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 

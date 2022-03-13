@@ -1,4 +1,6 @@
-// Call Hell World
-function helloWorld(){
-    alert("Hallo Welt");
+
+alert("Hallo form JS");
+
+function getValues(){
+
 }

@@ -17,6 +17,7 @@ nav {
     background-color: var(--dark-color);
 }
 
+
 footer {
     background-color: var(--dark-color);
 }
@@ -37,6 +38,15 @@ footer .social > a{
 footer .social > a:hover {
     opacity: .90;
     color: var(--secondary-color);
+}
+
+.gerade {
+    font-weight: bold;
+    font-size: large;
+}
+
+.ungerade {
+    font-weight: 100;
 }
 
 .bsIcon {
